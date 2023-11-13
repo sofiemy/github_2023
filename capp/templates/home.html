@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- Header -->
+<section class="section_header_home">
+  <div class="container">
+
+    <div class="header_home">
+      <div class="box"> 
+        <h1 style="font-size:55px;"><span class="text-logo"> Home</span></h1>
+        <p style="text-align:left;">
+            This is the home page
+          </p>
+        <div class="container_buttons_links_header_home">
+          <div class="btn">
+              <a href="{{url_for('users.register')}}" class="btn btn-primary btn-lg mr-2", style="background-color:#007bff;">Register</a>
+          </div>
+          <div class="btn">
+              <a href="{{url_for('users.login')}}" class="btn btn-primary btn-lg mr-2", style="background-color:#007bff;">Login</a>
+          </div>
+        </div>  
+      </div>
+      <div class="box">
+        <img 
+          src="{{url_for('static', filename='icons/carbon_app.svg')}}"
+          width="325" 
+          height="325"
+          alt=""/>
+      </div>
+    </div>
+
+  </div>
+</section> 
+
+<!-- Developers -->
+<section class="section_developers">
+  <div class="container">
+
+    <div class="developers" style="display:block;">
+      <h1 style="text-align:center;"> Our Team</h1>
+      <p>
+        Our team of economists, innovators and art designer with diverse interests and backgrounds
+      </p>      
+    </div>
+
+    <div class="developers">
+      <div class="box">
+        <img src="https://media.licdn.com/dms/image/D4D03AQGIc4uxlFZenQ/profile-displayphoto-shrink_800_800/0/1684268727536?e=1704931200&v=beta&t=DF8IEJ_ddtsUTiKE25L1uRMtF94PPwy1Gf_UAPi1H60" alt="" style="border-radius: 50%; width:200px;">
+        <h3>Sofie Myklebust</h3>
+        <p>  Bachelors degree in Art Direction, Høyskolen Kristiania. Currently studying Masters in Entrepreneurship and Innovation at NMBU.
+        </p>
+        <div class="section_container_buttons_developers">
+          <a class="btn_developers" href="https://www.linkedin.com/in/sofie-myklebust-b203a522a/" target="_blank" style="color: blue;">LinkedIn</a>
+        </div> 
+      </div>
+      <div class="box">
+        <img src="https://media.licdn.com/dms/image/D4D03AQHn16lPREVFmw/profile-displayphoto-shrink_800_800/0/1699436946635?e=1704931200&v=beta&t=SDQU52WLTjq4s_-AxUgiAXfrgrmv7PVpqzZ6z0DJAaE" alt="" style="border-radius: 50%; width:200px;">
+        <h3>Jasper John Baguio</h3>
+        <p>  Bachelors degree in marketing, Innovation and Leadership, NTNU. Currently studying Masters in Entrepreneurship and Innovation at NMBU.
+        </p>
+        <div class="section_container_buttons_developers">
+          <a class="btn_developers" href="https://www.linkedin.com/in/jasper-john-baguio/" target="_blank" style="color: blue;">LinkedIn</a>
+        </div>
+      </div>           
+      <div class="box">
+        <img src="https://media.licdn.com/dms/image/C4E03AQGpqNYlAdGcfw/profile-displayphoto-shrink_800_800/0/1657394269967?e=1704931200&v=beta&t=IGkda2niLaUt_StLcwxsFJLiBxgoAUKwfWbWL3iK8Ww" alt="" style="border-radius: 50%; width:200px;">
+        <h3>Reiner Hjemdahl</h3>
+        <p>  Bachelors degree in Social Econimoics NMBU. Currently studying Masters in Entrepreneurship and Innovation at NMBU.
+        </p>
+        <div class="section_container_buttons_developers">
+          <a class="btn_developers" href="https://www.linkedin.com/in/reinert-hjemdahl-2726801b8/" target="_blank" style="color: blue;">LinkedIn</a>
+        </div>
+      </div>     
+  </div>
+
+  <div class="developers">
+    <div class="box2">
+      <img src="https://media.licdn.com/dms/image/D4D03AQGYp3DwOV4GKA/profile-displayphoto-shrink_800_800/0/1667147346015?e=1704931200&v=beta&t=843P9LhyWUpfDuQZ154bMDN3eG9NJMkcRDiOZUBq9BY" alt="" style="border-radius: 50%; width:200px;">
+      <h3>Ann Iren Haakenstad</h3>
+      <p> Bachelors degree in Business and Administration, NMBU. Currently studying Masters in Entrepreneurship and Innovation at NMBU.
+      </p>
+      <div class="section_container_buttons_developers">
+        <a class="btn_developers" href="https://www.linkedin.com/in/annirenhaakenstad/" target="_blank" style="color: blue;">LinkedIn</a>
+      </div>
+    </div>
+    <div class="box2">
+      <img src="https://media.licdn.com/dms/image/C5603AQGKj4Ux4jq4eQ/profile-displayphoto-shrink_800_800/0/1660770734956?e=1704931200&v=beta&t=objU6a_SdxN0Dd9gSwR0NjcJ0XuApbyTUs-GdIwfy1o" alt="" style="border-radius: 50%; width:200px;">
+      <h3>Christina Aastø</h3>
+      <p>  Bachelors degree in Innovation and Project Managment, Østfold University Collage. Currently studying Masters in Entrepreneurship and Innovation at NMBU.
+      </p>
+      <div class="section_container_buttons_developers">
+        <a class="btn_developers" href="https://www.linkedin.com/in/christina-aast%C3%B8-8377897a/" target="_blank" style="color: blue;">LinkedIn</a>
+      </div>
+    </div> 
+    <div class="box">
+      <img src="https://media.licdn.com/dms/image/D4D03AQGvn5xR0PhWVw/profile-displayphoto-shrink_800_800/0/1665665274104?e=1704931200&v=beta&t=qBYIYsomqe22cQBsKQ65GaW2LQ3doPTbUZhfQOIF45M" alt="" style="border-radius: 50%; width:200px;">
+      <h3>Thea Dyring</h3>
+      <p>  Bachelors degree in International Enviorment and Development studies, NMBU. Currently studying Masters in Entrepreneurship and Innovation at NMBU.
+      </p>
+      <div class="section_container_buttons_developers">
+        <a class="btn_developers" href="https://www.linkedin.com/in/thea-dyring-016b87234/" target="_blank" style="color: blue;">LinkedIn</a>
+      </div> 
+    </div>         
+
+      </div>     
+  </div>
+
+  </div>          
+</section>
+        
+{% endblock content %}
